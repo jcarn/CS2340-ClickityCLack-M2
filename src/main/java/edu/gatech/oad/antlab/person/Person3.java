@@ -43,6 +43,17 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+		char[] in = input.toCharArray();
+		int begin = 0;
+		int end = in.length - 1;
+		char temp;
+		while(end > begin){
+			temp = in[begin];
+			in[begin] = in[end];
+			in[end] = temp;
+			end--;
+			begin++;
+		}
+		return new String(in);
 	}
 }
