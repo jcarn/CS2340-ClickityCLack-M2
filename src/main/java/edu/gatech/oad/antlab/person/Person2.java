@@ -35,7 +35,7 @@ public class Person2 {
 	private String calc(String input) {
 	  //Person 2 put your implementation here
 		Random randGen = new Random(); // random number generator
-		ArrayList charList = new ArrayList(input.length()); // ArrayList to hold characters
+		ArrayList<Character> charList = new ArrayList<>(input.length()); // ArrayList to hold characters
 		for (int i = 0; i < input.length(); i++) {
 			charList.add(input.charAt(i));	// add characters to the ArrayList
 		}
