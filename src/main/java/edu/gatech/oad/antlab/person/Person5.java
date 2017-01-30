@@ -30,9 +30,12 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  String newString = input.substring(2);
-	  newString += input.substring(0, 1);
-	  return newString;
+	  StringBuilder newString = new StringBuilder(input);
+	  newString.deleteCharAt(0);
+	  newString.deleteCharAt(0);
+	  newString.append(input.charAt(0));
+	  newString.append(input.charAt(1));
+	  return newString.toString();
 	}
 	
 	/**
