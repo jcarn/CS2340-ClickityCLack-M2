@@ -30,8 +30,12 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+	  StringBuilder newString = new StringBuilder(input);
+	  newString.deleteCharAt(0);
+	  newString.deleteCharAt(0);
+	  newString.append(input.charAt(0));
+	  newString.append(input.charAt(1));
+	  return newString.toString();
 	}
 	
 	/**
